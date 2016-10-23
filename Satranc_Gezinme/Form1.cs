@@ -216,7 +216,11 @@ namespace Satranc_Gezinme
                 }                  
             }
             if (game == 8)
+            {
+                btnCiz.Text = "Yeniden Başla";
                 lblSkor.Text = "OYUN BİTTİ SKOR = " + snc.ToString();
+            }
+                
                
 
         }
@@ -247,25 +251,33 @@ namespace Satranc_Gezinme
 
         private void btnCiz_Click(object sender, EventArgs e)
         {
-             a:
+            if (pnlEkran.Enabled == true)
+            {
+                pnlEkran.Controls.Clear();
+                snc = 1;
+
+            }
+                
+                
+             
             
             if (rdbDokuz.Checked == true)
             {
-                dizi = new int[9, 9];
-                satir = 9;sutun = 9;
+                satir = 9; sutun = 9;
+                dizi = new int[satir,sutun];                
             }
             else if(rdbSekiz.Checked==true)
             {
-                dizi = new int[8, 8];
                 satir = 8; sutun = 8;
-
+                dizi = new int[satir, sutun];
             }
             else if(rdbYedi.Checked==true)
             {
-                dizi = new int[7, 7];
-                satir = 7;sutun = 7;
+                satir = 7; sutun = 7;
+                dizi = new int[satir, sutun];
+              
             }
-          goto a; for (i = 0; i < satir; i++)
+            for (i = 0; i < satir; i++)
             {
                 for (j = 0; j < sutun; j++)
                 {

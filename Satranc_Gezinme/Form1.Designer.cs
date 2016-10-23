@@ -34,6 +34,8 @@
             this.rdbSekiz = new System.Windows.Forms.RadioButton();
             this.rdbDokuz = new System.Windows.Forms.RadioButton();
             this.lblSkor = new System.Windows.Forms.Label();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnlEkran
@@ -46,18 +48,18 @@
             // btnCiz
             // 
             this.btnCiz.ForeColor = System.Drawing.Color.Chocolate;
-            this.btnCiz.Location = new System.Drawing.Point(494, 44);
+            this.btnCiz.Location = new System.Drawing.Point(469, 44);
             this.btnCiz.Name = "btnCiz";
-            this.btnCiz.Size = new System.Drawing.Size(75, 23);
+            this.btnCiz.Size = new System.Drawing.Size(100, 23);
             this.btnCiz.TabIndex = 0;
-            this.btnCiz.Text = "Ciz";
+            this.btnCiz.Text = "Başla";
             this.btnCiz.UseVisualStyleBackColor = true;
             this.btnCiz.Click += new System.EventHandler(this.btnCiz_Click);
             // 
             // rdbYedi
             // 
             this.rdbYedi.AutoSize = true;
-            this.rdbYedi.Location = new System.Drawing.Point(494, 90);
+            this.rdbYedi.Location = new System.Drawing.Point(72, 31);
             this.rdbYedi.Name = "rdbYedi";
             this.rdbYedi.Size = new System.Drawing.Size(41, 17);
             this.rdbYedi.TabIndex = 1;
@@ -68,7 +70,7 @@
             // rdbSekiz
             // 
             this.rdbSekiz.AutoSize = true;
-            this.rdbSekiz.Location = new System.Drawing.Point(494, 129);
+            this.rdbSekiz.Location = new System.Drawing.Point(72, 64);
             this.rdbSekiz.Name = "rdbSekiz";
             this.rdbSekiz.Size = new System.Drawing.Size(41, 17);
             this.rdbSekiz.TabIndex = 1;
@@ -79,7 +81,7 @@
             // rdbDokuz
             // 
             this.rdbDokuz.AutoSize = true;
-            this.rdbDokuz.Location = new System.Drawing.Point(494, 166);
+            this.rdbDokuz.Location = new System.Drawing.Point(72, 101);
             this.rdbDokuz.Name = "rdbDokuz";
             this.rdbDokuz.Size = new System.Drawing.Size(41, 17);
             this.rdbDokuz.TabIndex = 1;
@@ -98,20 +100,32 @@
             this.lblSkor.Text = "Skor";
             this.lblSkor.Visible = false;
             // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.rdbYedi);
+            this.groupBox1.Controls.Add(this.rdbSekiz);
+            this.groupBox1.Controls.Add(this.rdbDokuz);
+            this.groupBox1.Location = new System.Drawing.Point(426, 90);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(165, 171);
+            this.groupBox1.TabIndex = 5;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Kare Belirle";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(631, 373);
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.pnlEkran);
             this.Controls.Add(this.lblSkor);
-            this.Controls.Add(this.rdbDokuz);
-            this.Controls.Add(this.rdbSekiz);
-            this.Controls.Add(this.rdbYedi);
             this.Controls.Add(this.btnCiz);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -124,6 +138,7 @@
         private System.Windows.Forms.RadioButton rdbSekiz;
         private System.Windows.Forms.RadioButton rdbDokuz;
         private System.Windows.Forms.Label lblSkor;
+        private System.Windows.Forms.GroupBox groupBox1;
     }
 }
 
