@@ -53,7 +53,6 @@ namespace Satranc_Gezinme
                         {
                             if (item is Button)
                             {
-
                                 string[] bol;
                                 if ((item as Button).Tag != null)
                                 {
@@ -206,7 +205,7 @@ namespace Satranc_Gezinme
                                 }
 
                         }
-                        }
+                    }
 
                 }
                 }
@@ -220,9 +219,6 @@ namespace Satranc_Gezinme
                 btnCiz.Text = "Yeniden Başla";
                 lblSkor.Text = "OYUN BİTTİ SKOR = " + snc.ToString();
             }
-                
-               
-
         }
         public void Ciz()
         {
@@ -242,8 +238,7 @@ namespace Satranc_Gezinme
                         btn.Location = new Point(25 * j, 25 * i);
                         btn.Click += new EventHandler(Tiklama);
                         btn.FlatStyle = FlatStyle.Flat;
-                        pnlEkran.Controls.Add(btn);
-                        //this.Controls.Add(btn);
+                        pnlEkran.Controls.Add(btn);                          
                     }
                 }
             }
@@ -251,16 +246,15 @@ namespace Satranc_Gezinme
 
         private void btnCiz_Click(object sender, EventArgs e)
         {
+            lblSkor.Text = "";
+            lblBilgi.Text = "Mavi alanlarda ilerleme yapabilirsiniz.";
+            lblBilgi.Font = new Font("Georgia", 13);
             if (pnlEkran.Enabled == true)
             {
                 pnlEkran.Controls.Clear();
                 snc = 1;
 
             }
-                
-                
-             
-            
             if (rdbDokuz.Checked == true)
             {
                 satir = 9; sutun = 9;

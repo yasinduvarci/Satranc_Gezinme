@@ -35,12 +35,13 @@
             this.rdbDokuz = new System.Windows.Forms.RadioButton();
             this.lblSkor = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.lblBilgi = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnlEkran
             // 
-            this.pnlEkran.Location = new System.Drawing.Point(30, 33);
+            this.pnlEkran.Location = new System.Drawing.Point(30, 41);
             this.pnlEkran.Name = "pnlEkran";
             this.pnlEkran.Size = new System.Drawing.Size(366, 250);
             this.pnlEkran.TabIndex = 3;
@@ -93,7 +94,7 @@
             // 
             this.lblSkor.AutoSize = true;
             this.lblSkor.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSkor.Location = new System.Drawing.Point(169, 297);
+            this.lblSkor.Location = new System.Drawing.Point(169, 305);
             this.lblSkor.Name = "lblSkor";
             this.lblSkor.Size = new System.Drawing.Size(46, 20);
             this.lblSkor.TabIndex = 2;
@@ -112,11 +113,20 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Kare Belirle";
             // 
+            // lblBilgi
+            // 
+            this.lblBilgi.AutoSize = true;
+            this.lblBilgi.Location = new System.Drawing.Point(32, 13);
+            this.lblBilgi.Name = "lblBilgi";
+            this.lblBilgi.Size = new System.Drawing.Size(0, 13);
+            this.lblBilgi.TabIndex = 6;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(631, 373);
+            this.Controls.Add(this.lblBilgi);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.pnlEkran);
             this.Controls.Add(this.lblSkor);
@@ -139,6 +149,7 @@
         private System.Windows.Forms.RadioButton rdbDokuz;
         private System.Windows.Forms.Label lblSkor;
         private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Label lblBilgi;
     }
 }
 
